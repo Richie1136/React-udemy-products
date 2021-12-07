@@ -41,10 +41,10 @@ export default ({ children }) => {
       )
       const newFavStatus = !currentProdList[prodIndex].isFavorite
       const updatedProducts = [...currentProdList]
-      updatedProducts[prodIndex] = [
+      updatedProducts[prodIndex] = {
         ...currentProdList[prodIndex],
         isFavorite: newFavStatus
-      ]
+      }
       return updatedProducts
     })
   ]
