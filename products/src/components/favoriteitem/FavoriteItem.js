@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Card from '../UI/Card';
+import Card from '../card/Card';
 import './FavoriteItem.css';
 
 const FavoriteItem = ({ title, description }) => {

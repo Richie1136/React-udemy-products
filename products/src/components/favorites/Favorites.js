@@ -1,8 +1,8 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-import FavoriteItem from '../components/Favorites/FavoriteItem';
-import './Products.css';
+import FavoriteItem from '../favoriteitem/FavoriteItem';
+import '../products/Products.css'
 
 const Favorites = props => {
   const favoriteProducts = useSelector(state =>

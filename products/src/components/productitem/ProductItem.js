@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 
-import Card from '../UI/Card';
+import Card from '../card/Card';
 import './ProductItem.css';
 import { toggleFav } from '../../store/actions/products';
 
