@@ -5,7 +5,7 @@ import { ProductsContext } from '../../context/products-context';
 import './Products.css';
 
 const Products = props => {
-  const proudctList = useContext(ProductsContext).products
+  const productList = useContext(ProductsContext).products
   return (
     <ul className="products-list">
       {productList.map(prod => (
