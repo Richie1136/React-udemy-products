@@ -11,6 +11,10 @@ const useStore = () => {
   const dispatch = (actionIdentifer) => {
     const newState = actions[actionIdentifer](globalState)
     globalState = { ...globalState, ...newState }
+
+    for (let listener of listeners) {
+      listener(globalState)
+    }
   }
   useEffect(() => {
     listeners.push(setState)
