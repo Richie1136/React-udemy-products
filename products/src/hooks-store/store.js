@@ -10,6 +10,7 @@ const useStore = () => {
 
   const dispatch = (actionIdentifer) => {
     const newState = actions[actionIdentifer](globalState)
+    globalState = { ...globalState, ...newState }
   }
   useEffect(() => {
     listeners.push(setState)
