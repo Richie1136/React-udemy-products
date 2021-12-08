@@ -8,7 +8,6 @@ const ProductItem = ({ isFav, title, description, id }) => {
   const dispatch = useStore()[1]
 
   const toggleFavHandler = () => {
-    // toggleFav(id)
     dispatch('TOGGLE_FAV', id)
   };
 
