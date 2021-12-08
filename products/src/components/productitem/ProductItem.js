@@ -4,9 +4,9 @@ import Card from '../card/Card';
 import { useStore } from '../../hooks-store/store';
 import './ProductItem.css';
 
-const ProductItem = ({ isFav, title, description, id }) => {
+const ProductItem = React.memo(({ isFav, title, description, id }) => {
+  console.log("Rendering")
   const dispatch = useStore()[1]
-
   const toggleFavHandler = () => {
     dispatch('TOGGLE_FAV', id)
   };
@@ -25,6 +25,6 @@ const ProductItem = ({ isFav, title, description, id }) => {
       </div>
     </Card>
   );
-};
+});
 
 export default ProductItem;
